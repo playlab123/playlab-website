@@ -1,0 +1,28 @@
+﻿name: PlayLab
+title: PlayLab
+institution: University of Michigan-Flint
+description: Human-centered interactive experiences for learning, creativity, and human-robot collaboration.
+url: ''
+baseurl: ''
+plugins: []
+exclude:
+  - reference-site.html
+  - news
+  - _pages
+  - _posts
+  - Webpage
+  - feed.xml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - UPGRADING.md
+  - LICENSE
+  - setup.sh
+  - citesty.csl
+  - papers
+  - assets/main.scss
+  - assets/ref.bib
+  - assets/js/site.js
+  - images/screenshots
+  - vendor
+  - node_modules
