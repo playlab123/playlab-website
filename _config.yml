@@ -1,28 +1,25 @@
-﻿name: PlayLab
+name: PlayLab
 title: PlayLab
 institution: University of Michigan-Flint
-description: Human-centered interactive experiences for learning, creativity, and human-robot collaboration.
-url: ''
-baseurl: ''
-plugins: []
-exclude:
-  - reference-site.html
+description: PlayLab explores human-computer interaction, augmented and virtual reality, and tools for learning, making, and creative expression.
+url: https://playlab123.github.io
+baseurl: /playlab-website
+scholar: https://scholar.google.com/citations?user=8D7cYcUAAAAJ
+linkedin: https://www.linkedin.com/in/ananya-ipsita-81a16139
+college_url: https://www.umflint.edu/cit/
+university_url: https://www.umflint.edu/
+markdown: kramdown
+kramdown:
+  input: GFM
+collections:
+  - research
+  - publications
+  - people
+  - alumni
   - news
-  - _pages
-  - _posts
-  - Webpage
-  - feed.xml
+exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - UPGRADING.md
-  - LICENSE
-  - setup.sh
-  - citesty.csl
-  - papers
-  - assets/main.scss
-  - assets/ref.bib
-  - assets/js/site.js
-  - images/screenshots
   - vendor
   - node_modules

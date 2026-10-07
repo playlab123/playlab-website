@@ -1,0 +1,15 @@
+{% assign member = include.person %}
+<article class="person">
+  {% if member.photo and member.photo != '' %}
+  <img src="{{ member.photo | relative_url | escape }}" alt="{{ member.name | escape }}" loading="lazy">
+  {% else %}
+  {% assign words = member.name | remove_first: 'Dr. ' | split: ' ' %}
+  <div class="person-placeholder" aria-hidden="true">{% for word in words limit:2 %}{{ word | slice: 0 }}{% endfor %}</div>
+  {% endif %}
+  <h3>{% if member.website and member.website != '' %}<a href="{{ member.website | escape }}">{{ member.name | escape }} ↗</a>{% else %}{{ member.name | escape }}{% endif %}</h3>
+  <p>{{ member.role | escape }}</p>
+  {% assign biography = member.content | strip %}
+  {% if biography != '' %}
+  <details><summary>Research &amp; background</summary>{{ biography | markdownify }}</details>
+  {% endif %}
+</article>
